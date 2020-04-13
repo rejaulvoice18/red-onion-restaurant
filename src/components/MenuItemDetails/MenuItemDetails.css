@@ -1,0 +1,52 @@
+.title-btn-details{
+
+}
+.title-btn-details h1{
+    text-align: left;
+    margin-bottom: 35px;
+    font-size:310%;
+}
+.title-btn-details p{
+    text-align:justify;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.item-count{
+    text-align:left;
+}
+.plus-minus-raper-btn{
+    border:1px solid gray;
+    padding:14px;
+    border-radius:20px;
+}
+.plus-minus-raper-btn button{
+    border:none;
+    background-color:white;
+    margin:0px 8px;
+    font-size:25px;
+}
+.plus-btn{
+    color:orangered;
+}
+.menuitem-price{
+    font-weight: 700;
+    font-size: 30px;
+    margin-right:15px;
+}
+.item-add-btn-wr{
+    margin:40px 0px;
+    text-align:left;
+}
+.item-add-btn{
+    text-align:center;
+    background-color:red;
+    color:white;
+    width:110px;
+    height:45px;
+    border:none;
+    border-radius:25px;
+
+}
+.image-slide{
+    margin-top:100px;
+}

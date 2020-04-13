@@ -1,0 +1,51 @@
+.placeOrder-section{
+    padding:200px 0px;
+}
+.save-continue{
+    
+}
+.form-control{
+    background-color:rgb(226, 225, 225) !important;
+    width:200% !important;
+    height:45px !important;
+}
+.btn{
+    width:200%;
+    height:45px !important;
+}
+.cart-title{
+
+}
+.cart-title{
+    text-align:left !important;
+    font-size:18px;
+}
+.already-btn a{
+    text-decoration:none !important;
+    color:red;
+    
+}
+.cart-item-calculation h5{
+    font-size:16px;
+}
+.text-status{
+    text-align:left;
+}
+.status{
+    text-align:right;
+}
+.form-group textarea{
+    height:65px !important;
+}
+.place-btn{
+    width:92% !important;
+}
+hr{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 2rem;
+    color: black !important;
+    margin-bottom: 2rem;
+    border: 1;
+    border-top: 1px solid rgb(29, 28, 28);
+}

@@ -1,0 +1,41 @@
+.half-of-row{
+    text-align:left;
+    width:50%;
+    margin:20px 0px;
+}
+.half-of-row h1{
+    margin-bottom:20px;
+}
+.food-history-all-details{
+
+}
+.food-history-single-icon{
+  
+}
+.left-icon{
+    background-color: red;
+    width:40px !important;
+    height:40px;
+    padding:10px;
+    border-radius:100px;
+    color:white;
+}
+.food-history-details{
+    text-align:left;
+    padding-left:60px;
+    margin-top:20px;
+}
+.food-history-details p{
+    text-align:justify;
+    
+}
+.see-more-icon{
+    background-color: lightseagreen;
+    width:25px !important;
+    height:25px;
+    padding:5px;
+    border-radius:100px;
+    color:white;
+    margin-left:10px;
+    margin-top:10px;
+}

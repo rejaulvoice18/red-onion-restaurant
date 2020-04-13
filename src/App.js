@@ -1,24 +1,63 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import Header from './components/Header/Header';
+import Food from './components/Food/Food';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Breakfast from './components/Breakfast/Breakfast';
+import Dinner from './components/Dinner/Dinner';
+import Header from './components/Header/Header';
+import MenuItemDetails from './components/MenuItemDetails/MenuItemDetails';
+import MHeader from './components/MHeader/MHeader';
+import SignUp from './components/SignUp/SignUp';
+import Login from './components/Login/Login';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
+import SSinglePlaceOrder from './components/SSinglePlaceOrder/SSinglePlaceOrder';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MHeader></MHeader>
+      <Router>
+        <Switch>
+          <Route exact path="/lunch">
+            <Food></Food>
+          </Route>
+          <Route path="/breakfast">
+            <Breakfast></Breakfast>
+          </Route>
+          <Route path="/dinner">
+            <Dinner></Dinner>
+          </Route>
+          <Route exact path="/">
+            <Food></Food>
+          </Route>
+          <Route path="/signup">
+            <SignUp></SignUp>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/place">
+            <PlaceOrder></PlaceOrder>
+          </Route>
+          <Route path="/test">
+            <SSinglePlaceOrder></SSinglePlaceOrder>
+          </Route>
+          <Route path="/single">
+              <SSinglePlaceOrder></SSinglePlaceOrder>
+          </Route>
+          
+          <Route path="/:foodsId">
+            <MenuItemDetails></MenuItemDetails>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

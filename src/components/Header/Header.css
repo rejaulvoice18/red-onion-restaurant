@@ -1,0 +1,61 @@
+
+.bg{
+    background-image:url(../StaticImage/bannerBackground.png);
+    min-width:100%;
+    height:680px;
+    background-size:cover;
+    margin-top:60px;
+}
+.bg-title-btn{
+    height:500px;
+    padding:230px
+}
+.bg-title-btn input{
+    margin-top:20px;
+    background-color:white;
+    border-radius:20px;
+    border:none;
+    padding:6px 20px;
+    width:500px;
+    height:50px;
+    font-size:14px;
+}
+.bg-title-btn button{
+    margin-left:-80px;
+    background-color:orangered;
+    border:none;
+    width:120px;
+    height:52px;
+    border-radius:20px;
+    color:white;
+    font-size:14px;
+}
+.bg-title-btn h1{
+    font-size:60px;
+}
+.food-menu nav{
+    line-height:30px;
+    margin:50px 0;
+}
+nav .nav-link{
+    color:black;
+    font-weight: 700;
+    
+    
+}
+nav .nav-link:hover{
+    color:orangered;
+    text-decoration: none !important;
+}
+nav .active a{
+    color:orangered
+    
+}
+.food-menu nav .active:after{
+    content: "";
+    width:60%;
+    margin:0 auto;
+    height:2px;
+    background-color:orangered;
+    display:block;
+}

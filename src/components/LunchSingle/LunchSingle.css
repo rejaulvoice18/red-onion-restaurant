@@ -1,0 +1,17 @@
+.card{
+    border:none !important;
+    margin:10px;
+    padding:10px 25px;
+    transition-duration: 0.5s;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px gray;
+    border-radius:10px;
+}
+.card-title{
+    font-size:14px;
+    font-weight:700;
+}
+.card-text{
+    font-size:12px;
+}
