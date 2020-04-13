@@ -22,23 +22,22 @@ const Header = () => {
             <div className="container">
                 <div className="row">
                     <div className="food-menu m-auto">
-                        
                         <nav>
                             <ul className="nav justify-content-center">
                                 <li className="nav-item">
                                     <NavLink to="/breakfast" activeClassName="active">
-                                        <a class="nav-link" href="">Breakfast</a>
+                                        <a className="nav-link" href="">Breakfast</a>
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink to="/lunch" activeClassName="active">
-                                        <a class="nav-link" href="">Lunch</a>
+                                        <a className="nav-link" href="">Lunch</a>
                                     </NavLink>
                                     
                                 </li>
                                 <li className="nav-item">
                                     <NavLink to="/dinner" activeClassName="active">
-                                        <a class="nav-link" href="">Diner</a>
+                                        <a className="nav-link" href="">Diner</a>
                                     </NavLink>
                                 </li>
                             </ul>

@@ -12,6 +12,10 @@ const Food = () => {
     console.log(first6);
     const [food, setFood] = useState(first6);
     // const breakfast = food.filter(cat => cat.category === foodData.breakfast);
+
+    const handleAddFoodItem = () =>{
+        console.log("food Added");
+    }
     return (
         <div className="">
         <Header></Header>
@@ -20,7 +24,10 @@ const Food = () => {
                     {
                         food.map(singleFood => 
                         
-                        <LunchSingle food={singleFood}>
+                        <LunchSingle 
+                        
+                        handleAddFoodItem={handleAddFoodItem}
+                        food={singleFood}>
 
                         </LunchSingle>
                         
