@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons'
 import Dinner3 from '../MenuItemDetails/dinner3.png';
@@ -8,14 +8,21 @@ import Header from '../Header/Header';
 import './MenuItemDetails.css';
 import { useParams } from 'react-router-dom';
 import foodData from '../../foodData';
+import { cartContext } from '../../App';
 
 const MenuItemDetails = () => {
+
+    const [cart,setCart] =  useContext(cartContext);
+    console.log("Cart  data" ,cart)
     const {foodsId} = useParams();
-    const foodData2 = foodData.food.handleAddFoodItem;
-    const foodDetails = foodData2.find(food => food.id == foodsId);
+    // const foodData2 = foodData.handleAddFoodItem;
+    // const foodDetails = foodData2.find(food => food.id == foodsId);
+    const foodDetails = foodData.find(food => food.id == foodsId);
     
-    
-    console.log(foodDetails);
+    const cartHandler = () => {
+        const newCart = [...cart, foodDetails]
+        setCart(newCart)
+    }
     return (
         <div>
             <Header></Header>
@@ -35,7 +42,7 @@ const MenuItemDetails = () => {
                             </div>
                             <div className="item-add-btn-wr">
                                 <button 
-                                    onClick={foodDetails.handleAddFoodItem}
+                                    onClick={cartHandler}
                                 className="item-add-btn"><FontAwesomeIcon className="mr-3" icon={faCartArrowDown}></FontAwesomeIcon>Add</button>
                             </div>
                         </div>

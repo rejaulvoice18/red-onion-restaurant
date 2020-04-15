@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState, createContext} from 'react';
 import './App.css';
 // import Header from './components/Header/Header';
 import Food from './components/Food/Food';
@@ -18,9 +18,15 @@ import Login from './components/Login/Login';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import SSinglePlaceOrder from './components/SSinglePlaceOrder/SSinglePlaceOrder';
 
+export const cartContext = createContext();
 
 function App() {
+  const [cart,setCart] = useState([]);
+  
+  console.log("palloan",cart);
+
   return (
+    <cartContext.Provider value={[cart, setCart]}>
     <div className="App">
       <MHeader></MHeader>
       <Router>
@@ -46,9 +52,6 @@ function App() {
           <Route path="/place">
             <PlaceOrder></PlaceOrder>
           </Route>
-          <Route path="/test">
-            <SSinglePlaceOrder></SSinglePlaceOrder>
-          </Route>
           <Route path="/single">
               <SSinglePlaceOrder></SSinglePlaceOrder>
           </Route>
@@ -59,6 +62,7 @@ function App() {
         </Switch>
       </Router>
     </div>
+    </cartContext.Provider>
   );
 }
 

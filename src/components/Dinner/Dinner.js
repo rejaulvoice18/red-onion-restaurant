@@ -19,7 +19,7 @@ const Dinner = () => {
                         dinner.map(singDinner => <DinnerSingle dinner={singDinner}>
                         </DinnerSingle>)}
                 </div>
-                <button className="bangla-btn">Checkout Your Food</button>
+                <a href="/place"><button className="bangla-btn btn-danger">Checkout Your Food</button></a>
             </div>
             <FoodHistory></FoodHistory>
             <Footer></Footer>

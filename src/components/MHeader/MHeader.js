@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee,  faCartArrowDown } from '@fortawesome/free-solid-svg-icons'
 import './MHeader.css';
 import Logo from '../MHeader/logo2.png';
+import { cartContext } from '../../App';
+
+// const cartValue = useContext(cartContext);
 
 const MHeader = () => {
     return (
@@ -18,7 +21,7 @@ const MHeader = () => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#"><FontAwesomeIcon icon={faCartArrowDown}></FontAwesomeIcon><span className="ml-1">0</span></a>
+                                    <a className="nav-link" href="#"><FontAwesomeIcon icon={faCartArrowDown}></FontAwesomeIcon><span className="ml-1">2</span></a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/login">Login</a>
